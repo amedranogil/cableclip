@@ -1,14 +1,26 @@
+// External diameter of clip
 cableD=20;
+// wall thickness
 wall=1.6;
+// height of clip
 height=19;
+// extra material on the bottom of the base
 baseExtra=3;
+// diameter of the hole in the base, 0 to disable
 hole=5;
+// ratio of displacement of clip, closer to 1 makes for longer arms
 clip_baseRatio=1/3;
+// angle of clip holders on the top
 topAngle=45;
+// angle of the bottom opening of the clip
 bottomAngle=40;
+// pretensile angle of the clip
 openAngle= 35;
+// number of female hooks (>1)
 Nhooks=3;
+// tolerance for hooks
 tolerance=0.4;
+
 module base(){
     width=cableD;
     baseH=width/2+baseExtra;
